@@ -13,31 +13,26 @@
         <form class="auth-form" method="post" action="/crear-cuenta" enctype="application/x-www-form-urlencoded">
             <h2>Crear Cuenta</h2>
 
-            <!-- 1. Nombre Completo -->
             <div>
                 <label for="nombre">Nombre Completo:</label>
                 <input type="text" id="nombre" name="nombre" placeholder="ej. Juanito Perez" required minlength="10" maxlength="100">
             </div>
 
-            <!-- 2. Correo Electrónico -->
             <div>
                 <label filter="correo">Correo Electrónico:</label>
                 <input type="email" id="correo" name="correo" placeholder="juanito@gmail.com" required>
             </div>
 
-            <!-- 3. Contraseña -->
             <div>
                 <label filter="contrasenia">Contraseña:</label>
                 <input type="password" id="contrasenia" name="contrasenia" placeholder="Mínimo 8 caracteres" required minlength="8">
             </div>
 
-            <!-- 4. Pseudónimo -->
             <div>
                 <label filter="txt_pseudonimo">Pseudónimo:</label>
                 <input type="text" id="txt_pseudonimo" name="txt_pseudonimo" required pattern="[a-zA-Z]{3,10}-[0-9]{2,10}.*" placeholder="Nebula-2025">
             </div>
 
-            <!-- 5. Género -->
             <div>
                 <label>Género:</label>
                 <div>
@@ -52,7 +47,6 @@
                 </div>
             </div>
 
-            <!-- 6. Tipo de Suscripción -->
             <div>
                 <label filter="sel_suscripcion">Tipo Suscripción:</label>
                 <select id="sel_suscripcion" name="sel_suscripcion" required>
@@ -63,31 +57,28 @@
                 </select>
             </div>
 
-            <!-- 7. Fecha de Nacimiento -->
             <div>
                 <label filter="fechaNacimiento">Fecha Nacimiento:</label>
                 <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
             </div>
 
-            <!-- 8. Comentarios o Gustos (Agregado de image_6dbb24.png) -->
             <div>
                 <label filter="comentarios">Comentarios o Gustos:</label>
                 <textarea id="comentarios" name="comentarios" rows="4" cols="40" placeholder="Cuéntanos que música te gusta..."></textarea>
             </div>
 
-            <!-- 9. Términos y Condiciones (Agregado de image_6dbb24.png) -->
             <div>
                 <input type="checkbox" id="terminos" name="chk_terminos" value="aceptado" required>
                 <label filter="terminos">Acepto los términos y condiciones</label>
             </div>
 
-            <!-- 10. Botones de Acción -->
             <div>
                 <button type="submit">Registrarse</button>
-                <button type="reset">Limpiar Formulario</button>
+                <button type="reset">Limpiar el Formulario</button>
             </div>
-
         </form>
+
+        <p>¿Ya tienes una cuenta? <a href="iniciar-sesion.html">Inicia sesión aquí</a></p>
     </section>
 </main>
 
