@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nébula Music - Iniciar Sesión</title>
-    <link rel="stylesheet" href="../static/styles/styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
 
 <main class="auth-container">
     <section class="auth-card">
-        <form method="post" action="/autentication" enctype="application/x-www-form-urlencoded">
-            <h1>Iniciar Sesión</h1>
 
-            <div>
-                <label filter="correo">Correo Electrónico</label>
+        <div class="form-logo">
+            <img src="/imgs/nebula-03.svg" alt="Logo Nébula">
+        </div>
+
+        <div class="form-header">
+            <h3>Inicia Sesión</h3>
+            <p style="color: #cdb5e0; font-size: 0.9rem; margin-top: 5px;">Ingresa tus credenciales de acceso</p>
+        </div>
+
+        <form method="post" action="/autentication" enctype="application/x-www-form-urlencoded">
+
+            <div class="form-group">
+                <label for="correo">Correo Electrónico</label>
                 <input
                         type="email"
                         id="correo"
@@ -26,8 +35,8 @@
                 >
             </div>
 
-            <div>
-                <label filter="contrasenia">Contraseña</label>
+            <div class="form-group">
+                <label for="contrasenia">Contraseña</label>
                 <input
                         type="password"
                         name="contrasenia"
@@ -38,11 +47,12 @@
             </div>
 
             <div>
-                <button type="submit">Iniciar Sesión</button>
-                <button type="reset">Limpiar el Formulario</button>
+                <button type="submit" class="btn-primary">Iniciar Sesión</button>
+                <button type="reset" class="btn-secondary">Limpiar el Formulario</button>
             </div>
         </form>
-        <p>¿Aún no tienes una cuenta? <a href="registro.html">Registrar aquí</a></p>
+
+        <p class="link">¿Aún no tienes una cuenta? <a href="registro.html">Regístrate aquí</a></p>
     </section>
 </main>
 
@@ -52,7 +62,3 @@
 
 </body>
 </html>
-
-
-
-
